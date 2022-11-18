@@ -1,15 +1,12 @@
 #!/bin/bash
 # A script to enumerate web-sites using google dorks
-# Author: Ivan Glinkin
-# Contact: ivan.o.glinkin@gmail.com
-# Release date: May 3, 2020
 
 # Variables
 ## General
 version="1.011"								## Version Year.Day
 updatedate="Aug 9,2022"				    	## The date of the last update
 example_domain="megacorp.one" 				## Example domain
-sleeptime=6									## Delay between queries, in seconds
+sleeptime=2									## Delay between queries, in seconds
 domain=$1 									## Get the domain
 browser='Mozilla'	## Browser information for curl
 gsite="site:$domain" 						## Google Site
@@ -73,7 +70,6 @@ echo -e "\e[00;33m#\e[00m" "\e[01;32m               Fast Google Dorks Scan      
 echo -e "\e[00;33m#                                                       #\e[00m" 
 echo -e "\e[00;33m#########################################################\e[00m"
 echo -e ""
-echo -e "\e[00;33m# https://www.linkedin.com/in/IvanGlinkin/ | @IvanGlinkin\e[00m"
 echo -e "\e[00;33m# Version:                 \e[00m" "\e[01;31m$version\e[00m"
 
 # Check domain
